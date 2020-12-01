@@ -2,7 +2,7 @@
 
 A simple tip calculator
 
-<img src="https://github.com/MichaelKMalak/simple_tip_calculator/blob/step-3/screenshots/screenshot_3.gif" width="350" />
+<img src="https://github.com/MichaelKMalak/simple_tip_calculator/blob/step-4/screenshots/screenshot_4.gif" width="350" />
 
 ## How to run ##
   - Run `flutter packages get` to download pubspec dependencies.
