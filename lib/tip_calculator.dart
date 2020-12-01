@@ -46,14 +46,15 @@ class _TipCalculatorState extends State<TipCalculator> {
           SizedBox(height: 25),
           Divider(),
           SizedBox(height: 25),
-          Text('Tip Amount - (not editable widget)'),
+          Text(
+              'bill amount is $_billAmount \nTip Amount should go here - (not editable widget)'),
           SizedBox(height: 25),
-          Text('Total Amount - (not editable widget)')
+          Text(
+              'tip percentage is $_tipPercentage \nTotal Amount should go here - (not editable widget)')
         ],
       ),
     );
   }
-
   void _onBillAmountChanged(String value) {
     setState(() {
       _billAmount = double.tryParse(value) ?? 0.0;
