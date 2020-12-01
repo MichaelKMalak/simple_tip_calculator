@@ -15,7 +15,20 @@ class _TipCalculatorState extends State<TipCalculator> {
         title: Text('Tip Calculator'),
         centerTitle: true,
       ),
-      body: Container(),
+      body: ListView(
+        padding: EdgeInsets.all(15),
+        children: <Widget>[
+          Text('Bill amount - (editable widget)'),
+          SizedBox(height: 25),
+          Text('Tip Percentage - (editable widget)'),
+          SizedBox(height: 25),
+          Divider(),
+          SizedBox(height: 25),
+          Text('Tip Amount - (not editable widget)'),
+          SizedBox(height: 25),
+          Text('Total Amount - (not editable widget)')
+        ],
+      ),
     );
   }
 }
