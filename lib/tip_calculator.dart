@@ -11,6 +11,9 @@ class _TipCalculatorState extends State<TipCalculator> {
   static const double initialBillAmount = 0;
   static const double initialTipPercentage = 15;
 
+  double _billAmount = initialBillAmount;
+  double _tipPercentage = initialTipPercentage;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +27,7 @@ class _TipCalculatorState extends State<TipCalculator> {
           TextFormField(
             initialValue: initialBillAmount.toString(),
             keyboardType: TextInputType.numberWithOptions(decimal: true),
-            onChanged: (String value){},
+            onChanged: _onBillAmountChanged,
             decoration: InputDecoration(
               hintText: 'Enter the Bill Amount',
               labelText: 'Bill Amount',
@@ -34,7 +37,7 @@ class _TipCalculatorState extends State<TipCalculator> {
           TextFormField(
             initialValue: initialTipPercentage.toString(),
             keyboardType: TextInputType.numberWithOptions(decimal: true),
-            onChanged: (String value){},
+            onChanged: _onTipAmountChanged,
             decoration: InputDecoration(
               hintText: 'Enter the Tip Percentage',
               labelText: 'Tip Percentage',
@@ -49,5 +52,17 @@ class _TipCalculatorState extends State<TipCalculator> {
         ],
       ),
     );
+  }
+
+  void _onBillAmountChanged(String value) {
+    setState(() {
+      _billAmount = double.tryParse(value) ?? 0.0;
+    });
+  }
+
+  void _onTipAmountChanged(String value) {
+    setState(() {
+      _tipPercentage = double.tryParse(value) ?? 0.0;
+    });
   }
 }
