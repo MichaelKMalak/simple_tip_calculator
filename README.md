@@ -1,16 +1,13 @@
-# simple_tip_calculator
+# tip_calculator
 
-A simple flutter tip calculator
+A simple tip calculator
 
-## Getting Started
+<img src="https://github.com/MichaelKMalak/simple_tip_calculator/blob/step-1/screenshots/screenshot_1.png" width="350" />
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to run ##
+  - Run `flutter packages get` to download pubspec dependencies.
+  - Run `flutter clean` for most of first run errors you may face.
+  - Run `flutter run` to try it live on running emulator or usb connected device.
+  - You can target a specific device to run by run `flutter devices` and getting the id and running `flutter run -d <device_id>`.
+  - Run `flutter build apk` to generate APK file.
+  - Run `flutter build ios` to package iOS app.
