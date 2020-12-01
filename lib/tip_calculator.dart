@@ -14,6 +14,12 @@ class _TipCalculatorState extends State<TipCalculator> {
   double _billAmount = initialBillAmount;
   double _tipPercentage = initialTipPercentage;
 
+  double get _tipAmount => _billAmount * _tipPercentage / 100;
+  double get _totalAmount => _billAmount + _tipAmount;
+
+  String get _tipAmountString => _tipAmount.toStringAsFixed(2);
+  String get _totalAmountString => _totalAmount.toStringAsFixed(2);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,11 +52,16 @@ class _TipCalculatorState extends State<TipCalculator> {
           SizedBox(height: 25),
           Divider(),
           SizedBox(height: 25),
-          Text(
-              'bill amount is $_billAmount \nTip Amount should go here - (not editable widget)'),
-          SizedBox(height: 25),
-          Text(
-              'tip percentage is $_tipPercentage \nTotal Amount should go here - (not editable widget)')
+          ListTile(
+            title: Text('Tip Amount'),
+            trailing: Text('\$$_tipAmountString'),
+            contentPadding: EdgeInsets.zero,
+          ),
+          ListTile(
+            title: Text('Total Amount'),
+            trailing: Text('\$' + _totalAmountString),
+            contentPadding: EdgeInsets.zero,
+          ),
         ],
       ),
     );
