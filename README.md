@@ -1,8 +1,11 @@
-# tip_calculator
+# Tip Calculator
+## Step 0: Empty Project
 
-A simple tip calculator
-
-<img src="https://github.com/MichaelKMalak/simple_tip_calculator/blob/step-4/screenshots/screenshot_4.gif" width="350" />
+## Next Steps
+- [Step 1: Empty Layout](https://github.com/MichaelKMalak/simple_tip_calculator/tree/step-1)
+- [Step 2: Editable fields](https://github.com/MichaelKMalak/simple_tip_calculator/tree/step-2)
+- [Step 3: Persist the state](https://github.com/MichaelKMalak/simple_tip_calculator/tree/step-3)
+- [Step 4: non-editable fields](https://github.com/MichaelKMalak/simple_tip_calculator/tree/step-4)
 
 ## How to run ##
   - Run `flutter packages get` to download pubspec dependencies.

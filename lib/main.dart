@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'tip_calculator.dart';
-
 void main() {
   runApp(MyApp());
 }
@@ -12,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.light(),
-      home: TipCalculator(),
+      home: Container(),
     );
   }
 }
