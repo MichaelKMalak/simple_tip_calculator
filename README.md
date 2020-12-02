@@ -1,6 +1,6 @@
 # Tip Calculator
 ## Step 3: Persist the state
-<img src="https://github.com/MichaelKMalak/simple_tip_calculator/blob/step-3/screenshots/screenshot_3.png" width="350" />
+<img src="https://github.com/MichaelKMalak/simple_tip_calculator/blob/step-3/screenshots/screenshot_3.gif" width="350" />
 
 ## Next Steps
 - [Step 4: Non-editable fields](https://github.com/MichaelKMalak/simple_tip_calculator/tree/step-4)
